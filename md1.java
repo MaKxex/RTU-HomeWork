@@ -28,13 +28,17 @@ public class md1 {
 
         System.out.println("result:");
 
-        if ((x-5)*(x-5)+(y-7)*(y-7)<=9 && y > 7)
+        float circleA = (x-5)*(x-5)+(y-7)*(y-7);
+        float circleB = (x-9)*(x-9)+(y-7)*(y-7);
+        float circleC = (x-7)*(x-7)+(y-9)*(y-9);
+
+        if ((circleA <=4 || circleB <=4)  && y >= 7 || circleC <= 4 && y > 9)
                 System.out.println("green");
-        else if (y>3 && y <=7 && ) 
+        else if (y>=3 && y < 7 && y>= 10 -x && y <= y +3)
                 System.out.println("blue");
             else
-                if (y>=8 && y<=x+6 && y<=20-x)
-                        System.out.println("blue");
+                if (x > 5 && x <9 && y > 7 && y < 9 && !(circleA <=4 && circleB <=4  && y > 7 || circleC <= 4 && y > 9))
+                        System.out.println("red");
                 else
                         System.out.println("white");
     }
@@ -44,3 +48,4 @@ public class md1 {
 
 // (x-5)(x-5)+(y-7)(y-7)<=2 &&y>=7
 // x =3 y =7 y = 10 - x
+//y <= x + 3
