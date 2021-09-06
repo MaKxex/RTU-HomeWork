@@ -6,7 +6,7 @@ public class md1 {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
         float x=0, y=0;
-        System.out.println("211RDB284 Gandžumjans Maksims 2");
+        System.out.println("TEST");
         
         System.out.print("x=");
         if (sc.hasNextFloat())
